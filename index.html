@@ -33,9 +33,9 @@
                                     <h2 class="title__heading">
                                         <span>We </span>
                                         <strong class="hero-section__words">
-                                             <span class="title__effect is-visible">Design</span>
-                                        <span class="title__effect">Develop</span>
-                                        <span class="title__effect">are Creative</span>                                       
+                                             <span class="title__effect is-visible">Create</span>
+                                        <span class="title__effect">Design</span>
+                                        <span class="title__effect">Develop</span>                                       
                                         </strong>
                                     </h2>
                                     <div class="title__description">Beyond the expectations - we will make it possible!</div>
@@ -51,11 +51,132 @@
         </div>
 
         <div class="button-group">
-        	<a href="index-color.html" class="btn-outline-success button-sm">Color</a>
-            <a href="index-slider.html" class="btn btn-outline-success button-sm">Slider</a>
-            <a href="index-video.html" class="btn btn-outline-success button-sm">Video Background</a>
-        </div>
+        	<a href="index-color.html"></a>
+           <nav role="navigation">
+  <ul class="menu__list">
+    <li class="menu__item">
+      <button class="menu__link">Menu Item</button>
+    </li>
+    <li class="menu__item">
+      <button class="menu__link">Menu Item</button>
+    </li>
+    <li class="menu__item">
+      <button class="menu__link">Menu Item</button>
+    </li>
+    <li class="menu__item">
+      <button class="menu__link">Menu Item</button>
+    </li>
+  </ul>
+</nav>
 
+        </div>
+ <style>
+       
+
+nav {
+    margin: .5em 0 3em;
+    font-size: 1.2em;
+}
+.menu__list {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.menu__item {
+	display: block;
+	margin: 1em 0;
+	margin: 0 .5em;
+}
+.menu__link,
+.reset {
+	font-family: 'Lato';
+    font-weight: 300;
+    font-size: 1em;
+	display: block;
+	padding: .5em 1em;
+	cursor: pointer;
+	user-select: none;
+	-webkit-touch-callout: none;
+	-khtml-user-select: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	position: relative;
+	text-align: center;
+	color: yellow;
+	background: none;
+	border: none;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: color 0.3s;
+}
+.menu__link:hover,
+.menu__link:focus,
+.reset:hover, 
+.reset:focus {
+	outline: none;
+	color: pink;
+}
+.menu__item--current .menu__link {
+	color: blue;
+}
+.menu__link:before,
+.menu__link:after {
+	content: '';
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	opacity: 0;
+	border: 2px solid pink;
+	transition: transform 0.3s, opacity 0.3s;
+	transition-timing-function: cubic-bezier(0.17, 0.67, 0.05, 1.29);
+}
+.menu__link:before {
+	top: 0;
+	left: 0;
+	border-width: 2px 0 0 2px;
+	transform: translate3d(10px, 10px, 0);
+}
+.menu__link:after {
+	right: 0;
+	bottom: 0;
+	border-width: 0 2px 2px 0;
+	transform: translate3d(-10px, -10px, 0);
+}
+.menu__item--current .menu__link:before,
+.menu__item--current .menu__link:after {
+	opacity: 1;
+	transform: translate3d(0, 0, 0);
+}
+footer {
+    margin: 3em 0 1em;
+}
+.reset {
+    border: solid 2px pink;
+    border-radius: 6px;
+    margin: 0 auto;
+}
+   </style>
+  <script>
+        // Initalize page
+setup();
+
+function setup() {
+    $('.menu__item').first().addClass('menu__item--current')
+    $('.header__avatar').addClass('drop');
+};
+
+// Menu fx on click 
+$('.menu__link').click( function() {
+    
+    // Menu button current selection
+    $('.menu__item').removeClass('menu__item--current');
+    $(this).parent().addClass('menu__item--current');
+    
+});     
+   </script>
         <!-- JS -->
         <script src="assets/js/plugins/animate-headline.js"></script>
         <script src="assets/js/main.js"></script>

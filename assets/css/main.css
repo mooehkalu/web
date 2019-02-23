@@ -1194,8 +1194,8 @@ h6, .h6 {
   text-transform: uppercase;
   letter-spacing: 1.75px;
   padding: 1rem 3.125rem;
-  border: 1px solid transparent;
-  border-radius: 50px;
+  border: none;
+  border-radius: none;
   outline: none !important;
   cursor: pointer;
   -webkit-user-select: none;
@@ -1481,7 +1481,7 @@ h6, .h6 {
 }
 
 .btn-outline-info:hover {
-  color: #fff;
+  color: #ccc;
   background-color: #cfd6ff;
   border-color: #cfd6ff;
 }
@@ -1517,7 +1517,7 @@ h6, .h6 {
 }
 
 .btn-outline-success {
-  color: #57d03b;
+  color: #fff;
   background-image: none;
   background-color: transparent;
   border-color: #57d03b;

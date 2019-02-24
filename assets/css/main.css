@@ -2581,12 +2581,12 @@ xclip
 
 .button-group{
   position: absolute;
-  bottom: 15px;
+  bottom: 6px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 999;
 }
 .button-sm{
-  padding: 6px 15px;
+  padding: 4px 15px;
   font-size: 8px;
 }

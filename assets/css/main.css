@@ -1193,7 +1193,7 @@ h6, .h6 {
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.75px;
-  padding: 1rem 3.125rem;
+  padding: 1rem .125rem;
   border: none;
   border-radius: none;
   outline: none !important;
@@ -2587,6 +2587,6 @@ xclip
   z-index: 999;
 }
 .button-sm{
-  padding: 10px 15px;
+  padding: 6px 15px;
   font-size: 8px;
 }
